@@ -47,7 +47,7 @@ a {
 }
 
 .header .hButton:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .header .headerIcons {
@@ -58,9 +58,15 @@ a {
   height: 2rem;
   width: 2rem;
   border-radius: 1rem;
-  background-color: rgb(146, 146, 146);
+  border-width: 0.3rem;
+  border-style: solid;
+  border-color: rgb(146, 146, 146);
   margin-top: 1rem;
   margin-right: 0.2rem;
+  background-clip: padding-box;
+  float: left;
+  background-size: cover;
+  background-position: center center;
 }
 
 .welcome {
@@ -118,4 +124,10 @@ img {
   .card {
     display: block;
   }
+}
+
+.card:hover {
+  box-shadow: 
+    2px 2px white,
+    5px 10px #646464;
 }

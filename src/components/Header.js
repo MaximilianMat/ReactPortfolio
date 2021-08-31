@@ -2,6 +2,8 @@ import React from 'react'
 import HeaderButton from './HeaderButton'
 import logo from '../icon.png'
 import githubLogo from '../github.png'
+import instagramLogo from '../instagram.png'
+import mailLogo from '../mail.png'
 import SocialBubble from './SocialBubble'
 
 const Header = (props) => {
@@ -43,9 +45,9 @@ const Header = (props) => {
                 <HeaderButton key={button.id} button={button}/>
             ))}
             <div className="headerIcons">
-                <SocialBubble imageSrc={githubLogo} link="https://google.com" desc="Google"/>
-                <SocialBubble imageSrc={githubLogo} link="https://google.com" desc="Google"/>
-                <SocialBubble imageSrc={githubLogo} link="https://google.com" desc="Google"/>
+                <SocialBubble imageSrc={githubLogo} link="https://github.com/MaximilianMat" desc="Github"/>
+                <SocialBubble imageSrc={instagramLogo} link="https://www.instagram.com/maxmatscher/" desc="Instagram"/>
+                <SocialBubble imageSrc={mailLogo} link="mailto:maxi.matscher@gmail.com" desc="Email"/>
             </div>
         </div>
     )
